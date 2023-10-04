@@ -1,6 +1,6 @@
-# G2_DBMS
-# EXP NO 1: DATA DEFINITION LANGUAGE COMMANDS IN RDBMS
-# AIM:
+G2_DBMS
+EXP NO 1: DATA DEFINITION LANGUAGE COMMANDS IN RDBMS
+AIM:
 To create a student database and execute DDL queries using SQL.
 
 DDL (Data Definition Language)
@@ -14,7 +14,7 @@ structures but not data. These commands are normally not used by a general user,
 
 database via an application
 
-# List of DDL commands:
+List of DDL commands:
 CREATE: This command is used to create the database or its objects (like table, index, function, views, store
 
 procedure, and triggers). DROP: This command is used to delete objects from the database. ALTER: This is used to
@@ -23,13 +23,13 @@ alter the structure of the database. TRUNCATE: This is used to remove all record
 
 allocated for the records are removed. RENAME: This is used to rename an object existing in the database.
 
-# Query:
+Query:
 Create a table student with the following fieds rollno,name,age,address,phoneno.
 SQL QUERY:
 
 create table student(rollno numeric(4), name varchar(50), age numeric(2), address varchar(10), phoneno numeric(10));
 
-## OUTPUT:
+OUTPUT:
 271320809-29fcdd94-e003-492c-9f3e-eee9fd45d026
 
 Change the above student table by adding another attribute department.
@@ -37,7 +37,7 @@ SQL QUERY:
 
 alter table student add department varchar(10);
 
-## OUTPUT:
+OUTPUT:
 271324910-06af2051-da64-49cd-ad2c-495aeab4cbed
 
 Drop the student table
@@ -45,7 +45,7 @@ SQL QUERY:
 
 drop table student;
 
-## OUTPUT:
+OUTPUT:
 271325648-43100b74-7a5d-4ae4-9eb2-efe05e2aaa0a
 
 Delete the student table using truncate keyword
@@ -53,7 +53,7 @@ SQL QUERY:
 
 truncate table mystudent;
 
-## OUTPUT:
+OUTPUT:
 271325952-eed2ba30-2769-44cf-9fa5-b264aed25cd5
 
 Rename the student table to mystudent
@@ -61,8 +61,8 @@ SQL QUERY:
 
 rename student to mystudent;
 
-## OUTPUT:
+OUTPUT:
 271326620-8b5b3f3a-add8-489e-ba3d-3ff163c195c6
 
-# RESULT:
+RESULT:
 Creating a student table and executing the DDL queries using SQL was successfully executed.
